@@ -1,5 +1,5 @@
 
-function negative_only(num) {
+function negative_only() {
     let num;
     do {
         num = Number(prompt("Please enter a negative number:"));
@@ -9,12 +9,14 @@ function negative_only(num) {
 
 
 function factorial(n) {
-    if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) return undefined;
-    if (n === 0) return 1;
-    
+    if (n < 0 || !Number.isInteger(n)) {
+        return "undefined";
+    }
     let result = 1;
-    for (let i = n; i > 0; i--) {
-      result *= i;
+    while (n > 0) {
+        result *= n;
+        n--;
     }
     return result;
-  }
+}
+alert
