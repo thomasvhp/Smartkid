@@ -19,4 +19,13 @@ function parrot(){
         alert(response);
     }
 }
-parrot();
+
+
+function negative_only() {
+    let num = prompt("Please enter a negative number");
+    while(num > 0){
+        num = prompt("Please enter a NEGATIVE number");
+    }
+    return num;
+}
+negative_only();
