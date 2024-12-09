@@ -28,4 +28,18 @@ function negative_only() {
     }
     return num;
 }
-negative_only();
+
+function fact(num, n) {
+    return num * n;
+}
+
+function factorial(n) {
+    let result = 1; 
+    while (n > 0) {
+        result *= n; 
+        n--; 
+    }
+    console.log(result);
+}
+
+factorial(5); 
